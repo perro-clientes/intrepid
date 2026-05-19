@@ -11,14 +11,14 @@ export function ActionButton({ label, icon, className }: ActionButtonProps) {
   return (
     <button
       className={cn(
-        "inline-flex items-center gap-3",
+        "inline-flex items-center gap-1 cursor-pointer font-heading",
         className
       )}
     >
-      <span className="flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-primary text-black font-poppins font-medium text-lg">
+      <span className="flex items-center justify-center gap-2.5 px-8 py-2 rounded-full bg-primary text-black font-semibold text-md">
         {label}
       </span>
-      <span className="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-primary text-black">
+      <span className="flex items-center justify-center w-[40px] h-[40px] rounded-full bg-primary text-black">
         {icon}
       </span>
     </button>
