@@ -8,7 +8,7 @@ const navLinks = [
 
 export function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-15 py-8 text-white absolute top-0 left-0 right-0">
+    <nav className="flex items-center justify-between p-6 sm:px-12 py-8 text-white absolute top-0 left-0 right-0">
       <Link href="/">
         <img
           className="w-32"
