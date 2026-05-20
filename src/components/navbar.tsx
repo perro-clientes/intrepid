@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { ActionButton } from "./ui/action-button";
+import { ArrowRightIcon } from "./ui/icons";
 
 const navLinks = [
-  { href: "/about", label: "Nosotros" },
-  { href: "/services", label: "Servicios" },
+  { href: "/#about", label: "Nosotros" },
+  { href: "/#services", label: "Servicios" },
 ];
 
 export function Navbar() {
@@ -22,7 +23,7 @@ export function Navbar() {
           <li key={link.href}>
             <Link
               href={link.href}
-              className="text-white hover:text-[#CFD424] transition-colors"
+              className="text-white hover:text-brand transition-colors"
             >
               {link.label}
             </Link>
@@ -30,12 +31,12 @@ export function Navbar() {
         ))}
       </ul>
 
-      <ActionButton
-        label="contactanos"
-        icon={
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#000000" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path fill="none" d="M5 12h14m-7-7l7 7l-7 7"/></svg>
-        }
-      />
+      <Link href="/contacto">
+        <ActionButton
+          label="contactanos"
+          icon={<ArrowRightIcon />}
+        />
+      </Link>
     </nav>
   );
 }
