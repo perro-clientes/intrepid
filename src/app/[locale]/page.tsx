@@ -39,10 +39,10 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
         <Navbar dict={t} locale={locale} />
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-1 text-white">
-            <h1 className="text-4xl sm:text-8xl font-thin leading-tight font-heading">{hero.title}</h1>
+            <h1 className="text-4xl sm:text-6xl lg:text-8xl font-thin leading-tight font-heading">{hero.title}</h1>
             <p className="text-md font-thin font-body max-w-lg">{hero.subtitle}</p>
           </div>
-          <ActionButton label={hero.cta} icon={<ArrowRightIcon />} />
+          <ActionButton label={hero.cta} icon={<ArrowRightIcon />} href={`/${locale}/contacto`} />
         </div>
       </div>
 
@@ -69,7 +69,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
               <h2 className="text-4xl sm:text-7xl font-thin leading-tight font-heading">{ctaBanner.title}</h2>
               <p className="text-md font-thin font-body max-w-lg">{ctaBanner.subtitle}</p>
             </div>
-            <ActionButton label={ctaBanner.cta} icon={<ArrowRightIcon />} />
+            <ActionButton label={ctaBanner.cta} icon={<ArrowRightIcon />} href={`/${locale}/contacto`} />
           </div>
         </HeroSection>
 
@@ -112,16 +112,16 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
 
           <form action="" className="w-full max-w-3xl flex flex-col gap-6">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <Input type="text" name="name" placeholder={contactForm.name} className="bg-white min-h-[40px]" />
-              <Input type="text" name="company" placeholder={contactForm.company} className="bg-white min-h-[40px]" />
+              <Input type="text" name="name" placeholder={contactForm.name} className="bg-white" />
+              <Input type="text" name="company" placeholder={contactForm.company} className="bg-white" />
             </div>
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <Input type="email" name="email" placeholder={contactForm.email} className="bg-white min-h-[40px]" />
-              <Input type="tel" name="phone" placeholder={contactForm.phone} className="bg-white min-h-[40px]" />
+              <Input type="email" name="email" placeholder={contactForm.email} className="bg-white" />
+              <Input type="tel" name="phone" placeholder={contactForm.phone} className="bg-white" />
             </div>
 
-            <Textarea name="message" rows={6} placeholder={contactForm.message} className="bg-white min-h-[40px]" />
+            <Textarea name="message" rows={6} placeholder={contactForm.message} className="bg-white" />
 
             <ActionButton label={contactForm.submit} icon={<ArrowRightIcon />} />
           </form>

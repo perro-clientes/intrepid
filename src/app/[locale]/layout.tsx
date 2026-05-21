@@ -31,15 +31,13 @@ export default async function RootLayout({
   const dict = await getDictionary(locale);
 
   return (
-    <html
+    <div
+      className={`${poppins.variable} ${roboto.variable} min-h-full flex flex-col antialiased`}
       lang={locale}
-      className={`${poppins.variable} ${roboto.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <TranslationProvider dict={dict}>
-          {children}
-        </TranslationProvider>
-      </body>
-    </html>
+      <TranslationProvider dict={dict}>
+        {children}
+      </TranslationProvider>
+    </div>
   );
 }

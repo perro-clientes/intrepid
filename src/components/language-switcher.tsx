@@ -15,14 +15,14 @@ const LOCALES = [
   { code: "en", label: "EN" },
 ];
 
-export function LanguageSwitcher({ locale }: { locale: string }) {
+export function LanguageSwitcher({ locale, textColor = "text-white" }: { locale: string; textColor?: string }) {
   const pathname = usePathname();
   const current = LOCALES.find((l) => l.code === locale) ?? LOCALES[0];
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
-      <DropdownMenuTrigger className="inline-flex items-center gap-1.5 text-white text-sm hover:text-brand transition-colors font-heading font-medium outline-none cursor-pointer">
+      <DropdownMenuTrigger className={`inline-flex items-center gap-1.5 ${textColor} text-sm hover:text-brand transition-colors font-heading font-medium outline-none cursor-pointer`} >
         <Languages className="size-4" />
         <span>{current.label}</span>
         <ChevronDown className={`size-4 transition-transform duration-300 ${isOpen ? '-rotate-90' : ''}`} />
