@@ -11,7 +11,7 @@ interface ServiceCardProps {
 export function ServiceCard({ title, description, className, children }: ServiceCardProps) {
   return (
     <div className={cn("p-6 bg-white rounded-4xl flex flex-col gap-2", className)}>
-      <span className="text-xl font-regular leading-tight font-heading">{title}</span>
+      <h3 className="text-xl font-regular leading-tight font-heading">{title}</h3>
       <p className="text-foreground font-light font-body">{description}</p>
       {children}
     </div>

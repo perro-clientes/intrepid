@@ -13,7 +13,7 @@ export function SectionHeader({ chip, heading, description, className }: Section
     <div className={cn("flex flex-col items-center text-center", className)}>
       <div className="flex flex-col items-center justify-center mb-4">
         <Chip>{chip}</Chip>
-        <span className="text-4xl font-bold leading-tight font-heading">{heading}</span>
+        <h2 className="text-4xl font-bold leading-tight font-heading">{heading}</h2>
       </div>
       {description && (
         <p className="max-w-lg text-foreground font-light font-body">{description}</p>

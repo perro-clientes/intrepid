@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "about": "About Us",
+    "services": "Services",
+    "contact": "contact us"
+  },
+  "home": {
+    "hero": {
+      "title": "We don't move cargo.\nWe move decisions.",
+      "subtitle": "We accompany every operation with strategy, precision and commitment. Because in international trade, every step matters.",
+      "cta": "start your inquiry"
+    },
+    "about": {
+      "chip": "ABOUT US",
+      "heading": "Experience in every operation",
+      "description": "We are a team specialized in international logistics with extensive experience in coordinating import and export operations. We have a global network of agents and suppliers that allows us to operate with efficiency, agility and total reliability. We focus on providing tailor-made solutions, adapting to the needs of each client and ensuring close follow-up at every stage of the process.",
+      "mission": {
+        "title": "Mission",
+        "description": "To provide comprehensive logistics solutions in foreign trade, accompanying our clients with a personalized, efficient and transparent service in every operation."
+      },
+      "vision": {
+        "title": "Vision",
+        "description": "To be a leading company in international logistics, recognized for quality of service, commitment and adaptability in a constantly evolving global market."
+      },
+      "values": {
+        "title": "Values",
+        "description": "Commitment to the client. Transparency in every operation. Efficiency and proactivity. Professional responsibility. Teamwork. Results orientation."
+      }
+    },
+    "ctaBanner": {
+      "title": "We don't move cargo.\nWe move decisions.",
+      "subtitle": "We accompany every operation with strategy, precision and commitment. Because in international trade, every step matters.",
+      "cta": "start your inquiry"
+    },
+    "services": {
+      "chip": "SERVICES",
+      "heading": "Solutions for every operation",
+      "description": "We integrate every mode of transport to offer you a complete, efficient and frictionless logistics solution.",
+      "items": [
+        { "title": "Air Freight", "description": "Fast and secure solutions for urgent or high-value cargo. We coordinate with international airlines with door-to-door tracking." },
+        { "title": "Sea Freight", "description": "FCL and LCL operations from and to the world's main ports. Competitive alternatives in costs and transit times." },
+        { "title": "Land Transport", "description": "Pickups, deliveries and transfers integrated into the logistics chain with reliable operators, ensuring compliance and traceability." },
+        { "title": "Customs Clearance", "description": "Agile, precise management in accordance with current regulations. We anticipate contingencies to ensure efficient release of goods." },
+        { "title": "Cargo Insurance", "description": "Coverage designed according to cargo type, route and mode. We work with specialized insurers to reduce risks." },
+        { "title": "Certifications", "description": "Comprehensive management of documentation, certifications and permits with the corresponding agencies. We anticipate requirements from the start." }
+      ],
+      "asesorias": {
+        "title": "Consulting",
+        "description": "Your foreign trade department, without internal structure. We integrate as a strategic partner bringing experience, judgment and execution.",
+        "includesLabel": "What does it include?",
+        "items": [
+          "Foreign trade outsourcing",
+          "Assistance to new importers and exporters",
+          "Documentation management",
+          "Logistics coordination at origin and destination",
+          "Operations analysis and optimization"
+        ]
+      }
+    },
+    "contact": {
+      "chip": "CONTACT",
+      "heading": "Start your inquiry",
+      "description": "We integrate every mode of transport to offer you a complete, efficient and frictionless logistics solution.",
+      "form": {
+        "name": "Name",
+        "company": "Company",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Leave us your message",
+        "submit": "send"
+      }
+    }
+  },
+  "contacto": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "We are ready to help you with your next international trade operation.",
+      "cta": "write to us"
+    },
+    "form": {
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Leave us your message",
+      "submit": "send"
+    }
+  },
+  "footer": {
+    "phoneLabel": "Phone",
+    "phone": "+(088) 123 456 789",
+    "emailLabel": "Email",
+    "email": "info@intrepid.com",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "others": "Other",
+    "contactLink": "Contact",
+    "social": "Follow us",
+    "copyright": "© 2026 Intrepid. Designed and maintained by PERRO Agency."
+  },
+  "terminos": {
+    "title": "Terms & Conditions",
+    "description": "Terms and conditions for using the Intrepid website, international logistics."
+  },
+  "politicas": {
+    "title": "Privacy Policy",
+    "description": "Privacy policy for the Intrepid website, international logistics."
+  },
+  "languageSwitcher": {
+    "switchTo": "Español",
+    "label": "Language"
+  }
+}

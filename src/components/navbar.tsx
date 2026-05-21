@@ -1,13 +1,11 @@
 import Link from "next/link";
-import { ActionButton } from "./ui/action-button";
 import { ArrowRightIcon } from "./ui/icons";
+import { LanguageSwitcher } from "./language-switcher";
+import type { Dict } from "./types";
 
-const navLinks = [
-  { href: "/#about", label: "Nosotros" },
-  { href: "/#services", label: "Servicios" },
-];
+export function Navbar({ dict, locale }: { dict: Dict; locale: string }) {
+  const t = dict.nav as Record<string, string>;
 
-export function Navbar() {
   return (
     <nav className="flex items-center justify-between p-6 sm:px-12 py-8 text-white absolute top-0 left-0 right-0">
       <Link href="/">
@@ -18,25 +16,41 @@ export function Navbar() {
         />
       </Link>
 
-      <ul className="hidden sm:flex gap-6">
-        {navLinks.map((link) => (
-          <li key={link.href}>
-            <Link
-              href={link.href}
-              className="text-white hover:text-brand transition-colors"
-            >
-              {link.label}
-            </Link>
-          </li>
-        ))}
+      <ul className="hidden sm:flex gap-6 items-center">
+        <li>
+          <Link
+            href="/#about"
+            className="text-white hover:text-brand transition-colors"
+          >
+            {t.about}
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/#services"
+            className="text-white hover:text-brand transition-colors"
+          >
+            {t.services}
+          </Link>
+        </li>
       </ul>
 
-      <Link href="/contacto">
-        <ActionButton
-          label="contactanos"
-          icon={<ArrowRightIcon />}
-        />
-      </Link>
+      <div className="flex items-center gap-3">
+        
+        <Link
+          href="/contacto"
+          className="inline-flex items-center gap-1 font-heading"
+        >
+          <span className="flex items-center justify-center gap-2.5 px-8 py-2 rounded-full bg-primary text-primary-foreground font-semibold text-md">
+            {t.contact}
+          </span>
+          <span className="flex items-center justify-center w-[40px] h-[40px] rounded-full bg-primary text-primary-foreground">
+            <ArrowRightIcon />
+          </span>
+        </Link>
+
+        <LanguageSwitcher locale={locale} />
+      </div>
     </nav>
   );
 }

@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "about": "Nosotros",
+    "services": "Servicios",
+    "contact": "contactanos"
+  },
+  "home": {
+    "hero": {
+      "title": "No movemos cargas.\nMovemos decisiones.",
+      "subtitle": "Acompañamos cada operación con estrategia, precisión y compromiso. Porque en comercio exterior, cada paso cuenta.",
+      "cta": "inicia tu consulta"
+    },
+    "about": {
+      "chip": "QUIÉNES SOMOS",
+      "heading": "Experiencia en cada operación",
+      "description": "Somos un equipo especializado en logística internacional con amplia experiencia en la coordinación de operaciones de importación y exportación. Contamos con una red global de agentes y proveedores que nos permite operar con eficiencia, agilidad y total confiabilidad. Nos enfocamos en brindar soluciones a medida, adaptándonos a las necesidades de cada cliente y asegurando un seguimiento cercano en cada etapa del proceso.",
+      "mission": {
+        "title": "Misión",
+        "description": "Brindar soluciones logísticas integrales en comercio exterior, acompañando a nuestros clientes con un servicio personalizado, eficiente y transparente en cada operación."
+      },
+      "vision": {
+        "title": "Visión",
+        "description": "Ser una empresa referente en logística internacional, reconocida por la calidad de servicio, compromiso y capacidad de adaptación a un mercado global en constante evolución."
+      },
+      "values": {
+        "title": "Valores",
+        "description": "Compromiso con el cliente. Transparencia en cada operación. Eficiencia y proactividad. Responsabilidad profesional. Trabajo en equipo. Orientación a resultados."
+      }
+    },
+    "ctaBanner": {
+      "title": "No movemos cargas.\nMovemos decisiones.",
+      "subtitle": "Acompañamos cada operación con estrategia, precisión y compromiso. Porque en comercio exterior, cada paso cuenta.",
+      "cta": "inicia tu consulta"
+    },
+    "services": {
+      "chip": "SERVICIOS",
+      "heading": "Soluciones para cada operación",
+      "description": "Integramos cada modalidad de transporte para ofrecerte una solución logística completa, eficiente y sin fricciones.",
+      "items": [
+        { "title": "Transporte Aéreo", "description": "Soluciones ágiles y seguras para cargas urgentes o de alto valor. Coordinamos con aerolíneas internacionales y seguimiento puerta a puerta." },
+        { "title": "Transporte Marítimo", "description": "Operaciones FCL y LCL desde y hacia los principales puertos del mundo. Alternativas competitivas en costos y tiempos de tránsito." },
+        { "title": "Transporte Terrestre", "description": "Retiros, entregas y traslados integrados a la cadena logística con operadores confiables, garantizando cumplimiento y trazabilidad." },
+        { "title": "Despacho Aduanero", "description": "Gestión ágil, precisa y conforme a normativa vigente. Anticipamos contingencias para garantizar una liberación eficiente de la mercadería." },
+        { "title": "Seguro de Carga", "description": "Coberturas diseñadas según tipo de carga, ruta y modalidad. Trabajamos con aseguradoras especializadas para reducir riesgos ante imprevistos." },
+        { "title": "Certificaciones", "description": "Gestión integral de documentación, certificaciones y permisos ante organismos correspondientes. Anticipamos requisitos desde el inicio." }
+      ],
+      "asesorias": {
+        "title": "Asesorías",
+        "description": "Tu departamento de comercio exterior, sin estructura interna. Nos integramos como socio estratégico aportando experiencia, criterio y ejecución.",
+        "includesLabel": "¿Qué incluye?",
+        "items": [
+          "Outsourcing de comercio exterior",
+          "Asistencia a nuevos importadores y exportadores",
+          "Gestión de documentación",
+          "Coordinación logística en origen y destino",
+          "Análisis y optimización de operaciones"
+        ]
+      }
+    },
+    "contact": {
+      "chip": "CONTACTO",
+      "heading": "Inicia tu consulta",
+      "description": "Integramos cada modalidad de transporte para ofrecerte una solución logística completa, eficiente y sin fricciones.",
+      "form": {
+        "name": "Nombre",
+        "company": "Empresa",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "message": "Dejanos tu consulta",
+        "submit": "enviar"
+      }
+    }
+  },
+  "contacto": {
+    "hero": {
+      "title": "Contáctanos",
+      "subtitle": "Estamos listos para ayudarte con tu próxima operación de comercio exterior.",
+      "cta": "escríbenos"
+    },
+    "form": {
+      "name": "Nombre",
+      "company": "Empresa",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "message": "Dejanos tu consulta",
+      "submit": "enviar"
+    }
+  },
+  "footer": {
+    "phoneLabel": "Teléfono",
+    "phone": "+(088) 123 456 789",
+    "emailLabel": "Correo electrónico",
+    "email": "info@intrepid.com",
+    "terms": "Términos y Condiciones",
+    "privacy": "Políticas de privacidad",
+    "others": "Otros",
+    "contactLink": "Contacto",
+    "social": "Seguinos en redes",
+    "copyright": "© 2026 Intrepid. Diseñado y mantenido por PERRO Agency."
+  },
+  "terminos": {
+    "title": "Términos y Condiciones",
+    "description": "Términos y condiciones de uso del sitio web de Intrepid, logística internacional."
+  },
+  "politicas": {
+    "title": "Políticas de Privacidad",
+    "description": "Políticas de privacidad del sitio web de Intrepid, logística internacional."
+  },
+  "languageSwitcher": {
+    "switchTo": "English",
+    "label": "Idioma"
+  }
+}
