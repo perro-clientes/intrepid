@@ -13,9 +13,9 @@ export default async function PoliticasPage({ params }: PageProps<"/[locale]/pol
   const politicas = t.politicas as Record<string, string>;
 
   return (
-    <div className="flex min-h-screen flex-col bg-muted">
+    <div className="flex flex-col bg-muted min-h-screen p-2">
       <div className="p-2">
-        <Navbar dict={t} locale={locale} />
+        <Navbar dict={t} locale={locale} variant="dark" />
       </div>
 
       <main className="flex-1 p-6 sm:px-12 sm:py-16 max-w-[1000px] mx-auto">
