@@ -2,8 +2,7 @@ import { Navbar } from "@/components/navbar";
 import { SiteFooter } from "@/components/site-footer";
 import { ActionButton } from "@/components/ui/action-button";
 import { ArrowRightIcon } from "@/components/ui/icons";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { ContactForm } from "@/components/contact-form";
 import { getDictionary, hasLocale } from "@/lib/translations";
 import { notFound } from "next/navigation";
 
@@ -29,28 +28,9 @@ export default async function ContactoPage({ params }: { params: Promise<{ local
               <h1 className="text-4xl md:text-8xl font-thin leading-tight font-heading">{hero.title}</h1>
               <p className="text-md font-thin font-body max-w-lg">{hero.subtitle}</p>
             </div>
-
-            <ActionButton
-              label={hero.cta}
-              icon={<ArrowRightIcon />}
-            />
           </div>
 
-          <form action="" className="w-full max-w-3xl flex flex-col gap-6">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <Input type="text" name="name" placeholder={form.name} className="bg-white" />
-              <Input type="text" name="company" placeholder={form.company} className="bg-white" />
-            </div>
-
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <Input type="email" name="email" placeholder={form.email} className="bg-white" />
-              <Input type="tel" name="phone" placeholder={form.phone} className="bg-white" />
-            </div>
-
-            <Textarea name="message" rows={6} placeholder={form.message} className="bg-white" />
-
-            <ActionButton label={form.submit} icon={<ArrowRightIcon />} />
-          </form>
+          <ContactForm form={form} successMessage={form.successMessage} />
         </div>
       </div>
 

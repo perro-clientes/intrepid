@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { ArrowRightIcon } from "./ui/icons";
@@ -19,6 +19,19 @@ export function Navbar({ dict, locale, variant = "light" }: { dict: Dict; locale
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const scrollToSection = useCallback((e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    const path = window.location.pathname;
+    const isHome = path === "/" || path === `/${locale}` || path === `/${locale}/`;
+
+    if (isHome) {
+      e.preventDefault();
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [locale]);
 
   const showGlass = scrolled && !menuOpen;
   const linkColor = showGlass || isDark ? "text-brand-foreground" : "text-white";
@@ -48,6 +61,7 @@ export function Navbar({ dict, locale, variant = "light" }: { dict: Dict; locale
           <li>
             <Link
               href="/#about"
+              onClick={(e) => scrollToSection(e, "about")}
               className={`${linkColor} hover:text-brand transition-colors`}
             >
               {t.about}
@@ -56,6 +70,7 @@ export function Navbar({ dict, locale, variant = "light" }: { dict: Dict; locale
           <li>
             <Link
               href="/#services"
+              onClick={(e) => scrollToSection(e, "services")}
               className={`${linkColor} hover:text-brand transition-colors`}
             >
               {t.services}
@@ -103,10 +118,10 @@ export function Navbar({ dict, locale, variant = "light" }: { dict: Dict; locale
         <Link href="/" className="text-white text-2xl font-heading" onClick={() => setMenuOpen(false)}>
           Home
         </Link>
-        <Link href="/#about" className="text-white text-2xl font-heading" onClick={() => setMenuOpen(false)}>
+        <Link href="/#about" className="text-white text-2xl font-heading" onClick={(e) => { scrollToSection(e, "about"); setMenuOpen(false); }}>
           {t.about}
         </Link>
-        <Link href="/#services" className="text-white text-2xl font-heading" onClick={() => setMenuOpen(false)}>
+        <Link href="/#services" className="text-white text-2xl font-heading" onClick={(e) => { scrollToSection(e, "services"); setMenuOpen(false); }}>
           {t.services}
         </Link>
         <Link href="/contacto" className="text-white text-2xl font-heading" onClick={() => setMenuOpen(false)}>

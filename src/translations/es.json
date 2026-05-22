@@ -67,7 +67,8 @@
         "email": "Correo electrónico",
         "phone": "Teléfono",
         "message": "Dejanos tu consulta",
-        "submit": "enviar"
+        "submit": "enviar",
+        "successMessage": "Tu mensaje fue enviado correctamente"
       }
     }
   },
@@ -83,7 +84,8 @@
       "email": "Correo electrónico",
       "phone": "Teléfono",
       "message": "Dejanos tu consulta",
-      "submit": "enviar"
+      "submit": "enviar",
+      "successMessage": "Tu mensaje fue enviado correctamente"
     }
   },
   "footer": {

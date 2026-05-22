@@ -7,9 +7,10 @@ interface ActionButtonProps {
   icon: ReactNode
   className?: string
   href?: string
+  disabled?: boolean
 }
 
-export function ActionButton({ label, icon, className, href }: ActionButtonProps) {
+export function ActionButton({ label, icon, className, href, disabled }: ActionButtonProps) {
   const content = (
     <>
       <span className="flex items-center justify-center gap-2.5 px-8 py-2 rounded-full bg-primary text-primary-foreground font-semibold text-md group-hover:bg-[#B3B716] transition-colors duration-300">
@@ -39,8 +40,10 @@ export function ActionButton({ label, icon, className, href }: ActionButtonProps
 
   return (
     <button
+      type="submit"
+      disabled={disabled}
       className={cn(
-        "group inline-flex items-center gap-1 cursor-pointer font-heading",
+        "group inline-flex items-center gap-1 cursor-pointer font-heading disabled:opacity-50 disabled:cursor-not-allowed",
         className
       )}
     >

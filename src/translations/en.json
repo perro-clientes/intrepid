@@ -67,7 +67,8 @@
         "email": "Email",
         "phone": "Phone",
         "message": "Leave us your message",
-        "submit": "send"
+        "submit": "send",
+        "successMessage": "Your message was sent successfully"
       }
     }
   },
@@ -83,7 +84,8 @@
       "email": "Email",
       "phone": "Phone",
       "message": "Leave us your message",
-      "submit": "send"
+      "submit": "send",
+      "successMessage": "Your message was sent successfully"
     }
   },
   "footer": {
