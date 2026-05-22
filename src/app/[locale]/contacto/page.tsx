@@ -20,7 +20,7 @@ export default async function ContactoPage({ params }: { params: Promise<{ local
   return (
     <div className="flex min-h-screen flex-col bg-muted">
       <div className="p-2">
-        <div className="relative p-6 py-24 lg:py-6 sm:px-12 rounded-4xl min-h-[400px] lg:h-[80vh] flex flex-col lg:flex-row justify-center items-start lg:items-center gap-15 bg-cover bg-center bg-no-repeat" style={{ background: "linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000000c5 100%), url('/image-1.png') lightgray 50% / cover no-repeat" }}>
+        <div className="relative p-6 py-24 lg:py-6 sm:px-12 rounded-4xl min-h-[400px] lg:h-[80vh] flex flex-col lg:flex-row justify-center items-start lg:items-center gap-15 bg-cover bg-center bg-no-repeat" style={{ background: "linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000000c5 100%), url('/image-4.jpg') lightgray 50% / cover no-repeat" }}>
           <Navbar dict={t} locale={locale} />
 
           <div className="flex flex-col gap-8">

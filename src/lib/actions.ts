@@ -22,8 +22,8 @@ export async function sendContact(prevState: ActionState, formData: FormData): P
 
   try {
     await resend.emails.send({
-      from: "Intrepid <onboarding@resend.dev>",
-      to: "info@intrepid.com",
+      from: "Intrepid <info@intrepid-logistics.com>",
+      to: "info@intrepid-logistics.com",
       subject: `Contacto de ${name}${company ? ` - ${company}` : ""}`,
       html: `
         <h2>Nuevo mensaje de contacto</h2>

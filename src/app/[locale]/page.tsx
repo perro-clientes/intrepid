@@ -87,7 +87,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
         </div>
 
         <AnimatedSection>
-          <HeroSection className="max-w-[1500px] mx-auto" background="linear-gradient(-90deg, rgba(0, 0, 0, 0.00) 0%, #000000c5 100%), url('/image-1.png') lightgray 50% / cover no-repeat">
+          <HeroSection className="max-w-[1500px] mx-auto" background="linear-gradient(-90deg, rgba(0, 0, 0, 0.00) 0%, #000000c5 100%), url('/image-2.jpg') lightgray 50% / cover no-repeat">
             <div className="flex flex-col gap-8">
               <div className="flex flex-col gap-1 text-white">
                 <h2 className="text-4xl sm:text-7xl font-thin leading-tight font-heading">{ctaBanner.title}</h2>

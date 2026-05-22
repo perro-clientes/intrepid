@@ -18,7 +18,7 @@ export function SiteFooter({ dict }: { dict: Dict }) {
 
                 <div>
                   <p className="text-brand">{t.emailLabel}</p>
-                  <a href="mailto:info@intrepid.com" className="hover:text-brand transition-colors">{t.email}</a>
+                  <a href="mailto:info@intrepid-logistics.com" className="hover:text-brand transition-colors">{t.email}</a>
                 </div>
               </div>
             </div>
@@ -32,7 +32,7 @@ export function SiteFooter({ dict }: { dict: Dict }) {
 
                 <div className="flex flex-col gap-2">
                   <p className="text-brand">{t.others}</p>
-                  <a href="mailto:info@intrepid.com" className="hover:text-brand transition-colors">{t.contactLink}</a>
+                  <a href="mailto:info@intrepid-logistics.com" className="hover:text-brand transition-colors">{t.contactLink}</a>
                 </div>
 
                 <div className="flex flex-col gap-2">
