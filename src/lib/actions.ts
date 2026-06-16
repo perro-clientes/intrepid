@@ -1,5 +1,9 @@
 "use server";
 
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
 export type ActionState = {
   success: boolean;
   message?: string;
@@ -17,17 +21,20 @@ export async function sendContact(prevState: ActionState, formData: FormData): P
   }
 
   try {
-    const response = await fetch(process.env.CONTACT_WORKER_URL!, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, company, email, phone, message }),
+    await resend.emails.send({
+      from: "Intrepid <info@intrepid-logistics.com>",
+      to: "info@intrepid-logistics.com",
+      subject: `Contacto de ${name}${company ? ` - ${company}` : ""}`,
+      html: `
+        <h2>Nuevo mensaje de contacto</h2>
+        <p><strong>Nombre:</strong> ${name}</p>
+        <p><strong>Empresa:</strong> ${company || "No especificada"}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Teléfono:</strong> ${phone || "No especificado"}</p>
+        <p><strong>Mensaje:</strong></p>
+        <p>${message}</p>
+      `,
     });
-
-    const result = await response.json() as { success: boolean };
-
-    if (!result.success) {
-      return { success: false, message: "Error al enviar el mensaje. Intenta de nuevo." };
-    }
 
     return { success: true };
   } catch (error) {
