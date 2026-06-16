@@ -37,12 +37,30 @@
       "heading": "Soluciones para cada operación",
       "description": "Integramos cada modalidad de transporte para ofrecerte una solución logística completa, eficiente y sin fricciones.",
       "items": [
-        { "title": "Transporte Aéreo", "description": "Soluciones ágiles y seguras para cargas urgentes o de alto valor. Coordinamos con aerolíneas internacionales y seguimiento puerta a puerta." },
-        { "title": "Transporte Marítimo", "description": "Operaciones FCL y LCL desde y hacia los principales puertos del mundo. Alternativas competitivas en costos y tiempos de tránsito." },
-        { "title": "Transporte Terrestre", "description": "Retiros, entregas y traslados integrados a la cadena logística con operadores confiables, garantizando cumplimiento y trazabilidad." },
-        { "title": "Despacho Aduanero", "description": "Gestión ágil, precisa y conforme a normativa vigente. Anticipamos contingencias para garantizar una liberación eficiente de la mercadería." },
-        { "title": "Seguro de Carga", "description": "Coberturas diseñadas según tipo de carga, ruta y modalidad. Trabajamos con aseguradoras especializadas para reducir riesgos ante imprevistos." },
-        { "title": "Certificaciones", "description": "Gestión integral de documentación, certificaciones y permisos ante organismos correspondientes. Anticipamos requisitos desde el inicio." }
+        {
+          "title": "Transporte Aéreo",
+          "description": "Soluciones ágiles y seguras para cargas urgentes o de alto valor. Coordinamos con aerolíneas internacionales y seguimiento puerta a puerta."
+        },
+        {
+          "title": "Transporte Marítimo",
+          "description": "Operaciones FCL y LCL desde y hacia los principales puertos del mundo. Alternativas competitivas en costos y tiempos de tránsito."
+        },
+        {
+          "title": "Transporte Terrestre",
+          "description": "Retiros, entregas y traslados integrados a la cadena logística con operadores confiables, garantizando cumplimiento y trazabilidad."
+        },
+        {
+          "title": "Despacho Aduanero",
+          "description": "Gestión ágil, precisa y conforme a normativa vigente. Anticipamos contingencias para garantizar una liberación eficiente de la mercadería."
+        },
+        {
+          "title": "Seguro de Carga",
+          "description": "Coberturas diseñadas según tipo de carga, ruta y modalidad. Trabajamos con aseguradoras especializadas para reducir riesgos ante imprevistos."
+        },
+        {
+          "title": "Certificaciones",
+          "description": "Gestión integral de documentación, certificaciones y permisos ante organismos correspondientes. Anticipamos requisitos desde el inicio."
+        }
       ],
       "asesorias": {
         "title": "Asesorías",
@@ -90,7 +108,7 @@
   },
   "footer": {
     "phoneLabel": "Teléfono",
-    "phone": "+(088) 123 456 789",
+    "phone": "+54 9 11 3625 7026",
     "emailLabel": "Correo electrónico",
     "email": "info@intrepid-logistics.com",
     "terms": "Términos y Condiciones",

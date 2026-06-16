@@ -37,12 +37,30 @@
       "heading": "Solutions for every operation",
       "description": "We integrate every mode of transport to offer you a complete, efficient and frictionless logistics solution.",
       "items": [
-        { "title": "Air Freight", "description": "Fast and secure solutions for urgent or high-value cargo. We coordinate with international airlines with door-to-door tracking." },
-        { "title": "Sea Freight", "description": "FCL and LCL operations from and to the world's main ports. Competitive alternatives in costs and transit times." },
-        { "title": "Land Transport", "description": "Pickups, deliveries and transfers integrated into the logistics chain with reliable operators, ensuring compliance and traceability." },
-        { "title": "Customs Clearance", "description": "Agile, precise management in accordance with current regulations. We anticipate contingencies to ensure efficient release of goods." },
-        { "title": "Cargo Insurance", "description": "Coverage designed according to cargo type, route and mode. We work with specialized insurers to reduce risks." },
-        { "title": "Certifications", "description": "Comprehensive management of documentation, certifications and permits with the corresponding agencies. We anticipate requirements from the start." }
+        {
+          "title": "Air Freight",
+          "description": "Fast and secure solutions for urgent or high-value cargo. We coordinate with international airlines with door-to-door tracking."
+        },
+        {
+          "title": "Sea Freight",
+          "description": "FCL and LCL operations from and to the world's main ports. Competitive alternatives in costs and transit times."
+        },
+        {
+          "title": "Land Transport",
+          "description": "Pickups, deliveries and transfers integrated into the logistics chain with reliable operators, ensuring compliance and traceability."
+        },
+        {
+          "title": "Customs Clearance",
+          "description": "Agile, precise management in accordance with current regulations. We anticipate contingencies to ensure efficient release of goods."
+        },
+        {
+          "title": "Cargo Insurance",
+          "description": "Coverage designed according to cargo type, route and mode. We work with specialized insurers to reduce risks."
+        },
+        {
+          "title": "Certifications",
+          "description": "Comprehensive management of documentation, certifications and permits with the corresponding agencies. We anticipate requirements from the start."
+        }
       ],
       "asesorias": {
         "title": "Consulting",
@@ -90,7 +108,7 @@
   },
   "footer": {
     "phoneLabel": "Phone",
-    "phone": "+(088) 123 456 789",
+    "phone": "+54 9 11 3625 7026",
     "emailLabel": "Email",
     "email": "info@intrepid-logistics.com",
     "terms": "Terms & Conditions",
