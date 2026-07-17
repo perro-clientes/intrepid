@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Poppins, Roboto } from "next/font/google";
 import { getDictionary, hasLocale } from "@/lib/translations";
 import { TranslationProvider } from "@/components/translation-provider";
@@ -15,6 +16,26 @@ const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
 });
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  if (!hasLocale(locale)) {
+    return { title: "Intrepid" };
+  }
+
+  const dict = await getDictionary(locale);
+  const meta = dict.metadata as Record<string, string>;
+
+  return {
+    title: meta.title,
+    description: meta.description,
+  };
+}
 
 export async function generateStaticParams() {
   return [{ locale: "es" }, { locale: "en" }];

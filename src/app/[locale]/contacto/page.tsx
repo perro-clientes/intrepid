@@ -1,7 +1,5 @@
 import { Navbar } from "@/components/navbar";
 import { SiteFooter } from "@/components/site-footer";
-import { ActionButton } from "@/components/ui/action-button";
-import { ArrowRightIcon } from "@/components/ui/icons";
 import { ContactForm } from "@/components/contact-form";
 import { getDictionary, hasLocale } from "@/lib/translations";
 import { notFound } from "next/navigation";

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { ArrowRightIcon } from "./ui/icons";
 import { LanguageSwitcher } from "./language-switcher";
@@ -42,18 +43,24 @@ export function Navbar({ dict, locale, variant = "light" }: { dict: Dict; locale
       <nav className={`flex items-center justify-between px-8 sm:px-8 sm:py-3 ${menuOpen ? "text-white" : isDark ? "text-brand-foreground" : "text-white"} fixed top-4 left-1/2 -translate-x-1/2 w-full z-50 rounded-full transition-all duration-300 ${showGlass ? "max-w-[90vw] bg-white/20 backdrop-blur-lg shadow-sm" : "bg-transparent"}`}>
 
         <Link href="/" className="hidden sm:block">
-          <img
+          <Image
             className={`w-32 ${logoDark ? "brightness-0" : ""}`}
             src="/logos/intrepid-logotipo-white.svg"
             alt="Intrepid"
+            width={128}
+            height={40}
+            unoptimized
           />
         </Link>
 
         <Link href="/" className="sm:hidden">
-          <img
+          <Image
             className={`w-20 h-20 ${logoDark ? "brightness-0" : ""}`}
             src="/logos/intrepid-logotipo-white.svg"
             alt="Intrepid"
+            width={80}
+            height={80}
+            unoptimized
           />
         </Link>
 

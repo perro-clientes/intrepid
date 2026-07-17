@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Image from "next/image";
 import type { Dict } from "./types";
 
 export function SiteFooter({ dict }: { dict: Dict }) {
@@ -9,7 +11,7 @@ export function SiteFooter({ dict }: { dict: Dict }) {
         <div className="flex flex-col gap-8 max-w-[1440px] mx-auto">
           <div className="flex justify-between flex-col sm:flex-row gap-8 sm:gap-0">
             <div>
-              <img className="w-40 mb-10" src="/logos/intrepid-logotipo-white.svg" alt="Intrepid" />
+              <Image className="w-40 mb-10" src="/logos/intrepid-logotipo-white.svg" alt="Intrepid" width={160} height={48} unoptimized />
               <div className="flex flex-row flex-wrap gap-8">
                 <div>
                   <p className="text-brand">{t.phoneLabel}</p>
@@ -26,8 +28,8 @@ export function SiteFooter({ dict }: { dict: Dict }) {
             <div className="flex flex-row flex-wrap gap-8 sm:gap-14">
               <div className="flex flex-col gap-2">
                 <p className="text-brand">{t.phoneLabel}</p>
-                <a href="/terminos" className="hover:text-brand transition-colors">{t.terms}</a>
-                <a href="/politicas" className="hover:text-brand transition-colors">{t.privacy}</a>
+                <Link href="/terminos" className="hover:text-brand transition-colors">{t.terms}</Link>
+                <Link href="/politicas" className="hover:text-brand transition-colors">{t.privacy}</Link>
               </div>
 
               <div className="flex flex-col gap-2">
