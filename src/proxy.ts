@@ -25,7 +25,7 @@ export function proxy(request: NextRequest) {
     pathname.startsWith("/es/") || pathname === "/es" ||
     pathname.startsWith("/en/") || pathname === "/en"
   ) {
-    return;
+    return NextResponse.next();
   }
 
   const locale = getLocale(request);
@@ -36,6 +36,6 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/((?!_next/static|_next/image|favicon.ico|icon\\.svg|logos|image-1.png|image-2.jpg|image-3.jpg|image-4.jpg|image-16.png|file.svg|globe.svg|next.svg|vercel.svg|window.svg).*)",
+    "/((?!_next/static|_next/image|_next/data|api|favicon.ico|icon\\.svg|logos|image-.*\\.(png|jpg|jpeg|gif|svg|webp)$|file\\.svg|globe\\.svg|next\\.svg|vercel\\.svg|window\\.svg|robots\\.txt|sitemap\\.xml|wp-.*|\\.well-known).*)",
   ],
 };
